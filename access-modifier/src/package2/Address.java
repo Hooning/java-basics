@@ -15,7 +15,18 @@ public class Address {
         this.country = country;
     }
 
-    String getFullAddress() {
+    public String getFullAddress() {
         return street +  " " + houseNumber + ", " + city + ", " + state + ", " + country;
+    }
+
+    @Override
+    public String toString() {
+        return "Address{" +
+                "street='" + street + '\'' +
+                ", houseNumber=" + houseNumber +
+                ", city='" + city + '\'' +
+                ", state='" + state + '\'' +
+                ", country='" + country + '\'' +
+                '}';
     }
 }

@@ -11,8 +11,8 @@ public class Customer extends Person {
     private Address address;
 
 
-    public Customer(String firstName, String lastName, GENDER gender, LocalDate birthDate, String customerId, String nickName, String email, Address address) {
-        super(firstName, lastName, gender, birthDate);
+    public Customer(String firstName, String lastName, LocalDate birthDate, String customerId, String nickName, String email, Address address) {
+        super(firstName, lastName, birthDate);
         this.customerId = customerId;
         this.nickName = nickName;
         this.email = email;
@@ -53,14 +53,13 @@ public class Customer extends Person {
 
     public static void main(String[] args) {
         Customer customer = new Customer(
-                "David", "Cho", GENDER.MALE, LocalDate.of(1986, 12, 19),
+                "David", "Cho", LocalDate.of(1986, 12, 19),
                 "1234", "Hoontime", "david.hoontime@gmail.com",
-                new Address("Sebastian-Bach Str.", 26, "Chemnitz", "Saxony", "Germany"));
+                new Address("Bethoven Str.", 53, "Chemnitz", "Saxony", "Germany"));
 
         System.out.println(customer.getAddress());
-
-//        System.out.println(customer.firstName);
-//        System.out.println(customer.lastName);
+        System.out.println(customer.getFirstName());
+        System.out.println(customer.getLastName());
     }
 
 

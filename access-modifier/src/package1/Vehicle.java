@@ -14,11 +14,11 @@ public class Vehicle {
 //    }
 
     // [case3]
-    private static final Vehicle uniqueInstance = new Vehicle();
-    private Vehicle() {}
-    public static Vehicle getInstance(){
-        return uniqueInstance;
-    }
+//    private static final Vehicle uniqueInstance = new Vehicle();
+//    private Vehicle() {}
+//    public static Vehicle getInstance(){
+//        return uniqueInstance;
+//    }
 
     public int getWheelCount() {
         return wheelCount;

@@ -4,20 +4,13 @@ import java.time.LocalDate;
 
 public class Person {
 
-    protected enum GENDER {
-        MALE,
-        FEMALE
-    }
-
     private String firstName;
     private String lastName;
-    private GENDER gender;
     private LocalDate birthDate;
 
-    public Person(String firstName, String lastName, GENDER gender, LocalDate birthDate) {
+    public Person(String firstName, String lastName, LocalDate birthDate) {
         this.firstName = firstName;
         this.lastName = lastName;
-        this.gender = gender;
         this.birthDate = birthDate;
     }
 
@@ -40,14 +33,6 @@ public class Person {
 
     public void setLastName(String lastName) {
         this.lastName = lastName;
-    }
-
-    public GENDER getGender() {
-        return gender;
-    }
-
-    public void setGender(GENDER gender) {
-        this.gender = gender;
     }
 
     public LocalDate getBirthDate() {
