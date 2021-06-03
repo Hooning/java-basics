@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/java-basics.iml" filepath="$PROJECT_DIR$/java-basics.iml" />
+      <module fileurl="file://$PROJECT_DIR$/access-modifier/access-modifier.iml" filepath="$PROJECT_DIR$/access-modifier/access-modifier.iml" />
+      <module fileurl="file://$PROJECT_DIR$/oop-basics/oop-basics.iml" filepath="$PROJECT_DIR$/oop-basics/oop-basics.iml" />
     </modules>
   </component>
 </project>
